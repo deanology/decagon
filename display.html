@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="author" content="Idam Okechukwu">
+    <meta name="description" content="Scratch Card Application">
+    <meta name="keywords" content="HTML,CSS,JavaScript, JQuery, JSON, Git, Bootstrap">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+	<title>wtour</title>
+	<!-- Plugin-CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- Main-Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+ 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Scratch Card Generation</a> 
+            <!-- replace with Image -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="navbar-buttons">
+                <a class="btn btn-sm btn-success" href="index.html#form4-1">Contact form</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        
+    </section>
+
+    <section class="display-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Generate Scratch Card</h5>
+                            <a href="#" class="card-link btn btn-info justify-content-center">Generate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="single" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Scratch Card Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                            <label for="serialNumber">Serial Number</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Serial Number">
+                            </div>
+                            <div class="form-group col-md-6">
+                            <label for="pin">Pin</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Pin">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="creDate">Date Created</label>
+                                <input type="date" class="form-control" id="credate">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="expDate">Expiring Date</label>
+                                <input type="date" class="form-control" id="expdate">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="amount">Amount</label>
+                                <input type="number" class="form-control" id="amount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h4 class="text-center">
+                <p>&copy; Copyright 2019 Bootcamp Project Decagon - Idam Okechukwu Samuel</p>
+             </h4>
+        </div>
+    </footer>
+
+	<!--================ Jquery=================-->
+	<script src="script/jquery-3.4.1.min.js"></script>
+	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="script/all.min.js"></script>
+	<script src="script/script.js"></script>
+</body>
+</html>

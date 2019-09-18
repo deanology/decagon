@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="author" content="Idam Okechukwu">
+    <meta name="description" content="Scratch Card Application">
+    <meta name="keywords" content="HTML,CSS,JavaScript, JQuery, JSON, Git, Bootstrap">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+	<title>wtour</title>
+	<!-- Plugin-CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- Main-Stylesheets -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body>
+
+<!-- mainmenuarea -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+    </form>
+  </div>
+</nav>
+
+<section class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Generate Scratch Card
+          </div>
+          <div class="card-body">
+            <select class="form-control form-control-sm">
+              <option>Select Amount to Generate</option>
+              <option>100</option>
+              <option>200</option>
+              <option>500</option>
+              <option>1000</option>
+            </select>
+            <div class="space-20"></div>
+            <h6 class="card-text serial-number">Serial Number: </h6>
+            <h6 class="card-text pin">Pin: </h6>
+            <div class="space-20"></div>
+            <a href="#" class="btn btn-primary generatebtn">Generate</a>
+             <a href="#" class="btn btn-primary save">Save</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Read all Scratch Cards
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            View Specific Scratch
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Update Scratch Card
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Delete Scratch Card
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Check Validity
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer-area">
+    <div class="container">
+      <p class="footer-text mt-80 mx-auto col-lg-12">Copyright &copy;2019 All rights reserved | Idam Okechukwu Samuel.</p>
+    </div>
+  </footer>
+	<!--================ Jquery=================-->
+	<script src="script/jquery-3.4.1.min.js"></script>
+
+	<!--================Bootstrap=================-->
+	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <!-- <script src="script/fontawesome.min.js"></script> -->
+    <script src="script/all.min.js"></script>
+    <!--================Wow=================-->
+    <script src="script/wow.min.js"></script>
+    <script src="script/jquery.flexslider.js"></script>
+    <!--================Owl Carousel=================-->
+    <script src="script/owl.carousel.min.js"></script>
+	<script src="script/script.js"></script>
+    <!--================Smooth Scroll=================-->
+    <script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+	<!--================ Wow Animation=================-->
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+	</script>
+</body>
+</html>
