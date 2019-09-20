@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="author" content="Idam Okechukwu">
+    <meta name="description" content="Scratch Card Application">
+    <meta name="keywords" content="HTML,CSS,JavaScript, JQuery, JSON, Git, Bootstrap">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+	<title>wtour</title>
+	<!-- Plugin-CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- Main-Stylesheets -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body>
+
+<!-- mainmenuarea -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+    </form>
+  </div>
+</nav>
+
+<section class="padding">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-10" class="">
+        <table class="table table-bordered table-striped">
+          <caption>List of all Scratch cards</caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Serial Number</th>
+              <th scope="col">Pin</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Expiry Date</th>
+            </tr>
+          </thead>
+          <tbody class="appendScratchCard">
+            <tr>
+              <th scope="row">1</th>
+              <td>7817549722718715</td>
+              <td>937194748729191</td>
+              <td>100</td>
+              <td>2019-12-13</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>1646932302425403</td>
+              <td>3018775810017209</td>
+              <td>200</td>
+              <td>2019-12-13</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>3286247564971978</td>
+              <td>4458863020393566</td>
+              <td>500</td>
+              <td>2019-12-13</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>444436141692849</td>
+              <td>5138883571481414</td>
+              <td>200</td>
+              <td>2019-12-13</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>5727115160912257</td>
+              <td>581704064162236</td>
+              <td>1000</td>
+              <td>2019-12-13</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-area">
+    <div class="container">
+      <p class="footer-text mt-80 mx-auto col-lg-12">Copyright &copy;2019 All rights reserved | Idam Okechukwu Samuel.</p>
+    </div>
+  </footer>
+	<!--================ Jquery=================-->
+	<script src="script/jquery-3.4.1.min.js"></script>
+
+	<!--================Bootstrap=================-->
+	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <!-- <script src="script/fontawesome.min.js"></script> -->
+    <script src="script/all.min.js"></script>
+    <!--================Wow=================-->
+	<script src="script/script.js"></script>
+  <script src="script/script2.js"></script>
+</body>
+</html>

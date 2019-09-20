@@ -30,29 +30,18 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#">Disabled</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
     </form>
   </div>
 </nav>
@@ -63,10 +52,10 @@
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
           <div class="card-header">
-            Generate Scratch Card
+            <b>Generate Scratch Card</b>
           </div>
           <div class="card-body">
-            <select class="form-control form-control-sm">
+            <select class="form-control form-control-sm" id="generated_amount">
               <option>Select Amount to Generate</option>
               <option>100</option>
               <option>200</option>
@@ -74,11 +63,23 @@
               <option>1000</option>
             </select>
             <div class="space-20"></div>
-            <h6 class="card-text serial-number">Serial Number: </h6>
-            <h6 class="card-text pin">Pin: </h6>
+            <div class="form-group">
+              <label for="serial-number">Serial Number</label>
+              <input type="text" class="form-control serial-number" id="generated_serialnumber" placeholder="click the generate button">
+            </div>
+            <div class="form-group">
+              <label for="pin">Pin</label>
+              <input type="text" class="form-control pin" id="generated_pin" placeholder="click the generate button">
+            </div>
+            <div class="form-group">
+              <label for="pin">Expiry date</label>
+              <input type="date" class="form-control date" id="generated_date">
+            </div>
+            <!--  -->
             <div class="space-20"></div>
             <a href="#" class="btn btn-primary generatebtn">Generate</a>
              <a href="#" class="btn btn-primary save">Save</a>
+             <a href="#" class="btn btn-primary reset">Reset</a>
           </div>
         </div>
       </div>
@@ -86,7 +87,38 @@
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
           <div class="card-header">
-            Read all Scratch Cards
+            <b>Read all Scratch Cards</b>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Click on the button below to see a list of all scratch cards available</p>
+            <a href="#" class="btn btn-primary" id="viewAllBtn">View All</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <b>Read Specific Scratch Card</b>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input type="text" class="form-control" id="single-search" placeholder="Card Serial Number">
+            </div>
+            <a href="#" class="btn btn-primary single-search">Search</a>
+            <div class="space-20"></div>
+            <h6 class="card-text single_amount">Amount: </h6>
+            <h6 class="card-text single_serial_number">Serial Number: </h6>
+            <h6 class="card-text single_pin">Pin: </h6>
+            <h6 class="card-text single_date">Expiry Date: </h6>
+          </div>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <b>Update Scratch Card</b>
           </div>
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
@@ -99,12 +131,14 @@
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
           <div class="card-header">
-            View Specific Scratch
+            <b>Delete Scratch Card</b>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="form-group">
+                <input type="text" class="form-control" id="single-delete" placeholder="Card Serial Number">
+              </div>
+              <a href="#" class="btn btn-primary single-delete">Delete</a>
+            <div class="space-20"></div>
           </div>
         </div>
       </div>
@@ -112,38 +146,15 @@
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
           <div class="card-header">
-            Update Scratch Card
+            <b>Check Validity</b>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="space-60"></div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-          <div class="card-header">
-            Delete Scratch Card
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="space-60"></div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-          <div class="card-header">
-            Check Validity
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="form-group">
+              <input type="text" class="form-control" id="single_validity_check" placeholder="Card Serial Number">
+            </div>
+            <a href="#" class="btn btn-primary check_validity">Check Validity</a>
+            <div class="space-20"></div>
+            <h6 id="validity_message" style="color: green;"></h6>
           </div>
         </div>
       </div>
@@ -165,22 +176,7 @@
     <script src="script/popper.min.js"></script>
     <!-- <script src="script/fontawesome.min.js"></script> -->
     <script src="script/all.min.js"></script>
-    <!--================Wow=================-->
-    <script src="script/wow.min.js"></script>
-    <script src="script/jquery.flexslider.js"></script>
-    <!--================Owl Carousel=================-->
-    <script src="script/owl.carousel.min.js"></script>
 	<script src="script/script.js"></script>
-    <!--================Smooth Scroll=================-->
-    <script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-	</script>
-
-	<!--================ Wow Animation=================-->
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
-
-	</script>
+  <script src="script/script2.js"></script>
 </body>
 </html>
